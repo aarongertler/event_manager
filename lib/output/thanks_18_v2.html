@@ -4,22 +4,27 @@
   <title>Thank You!</title>
 </head>
 <body>
-  <h1>Thanks, <%= name %>!</h1>
+  <h1>Thanks, Nash!</h1>
   <p>We're thrilled that you came to our conference.  We couldn't have done it without you!</p>
 
   <p>
     Political activism is at the heart of any democracy and your voice needs to be heard.
-    Please consider reaching out to your representatives:
+    Please consider reaching out to your following representatives:
   </p>
 
   <table>
   <tr><th>Name</th><th>Website</th></tr>
-    <% legislators.each do |legislator| %>
+    
       <tr>
-        <td><%= "#{legislator[:first_name]} #{legislator[:last_name]}" %></td>
-        <td><%= "@#{legislator[:twitter_account]}" %></td>
+        <td>Maria Cantwell</td>
+        <td>@SenatorCantwell</td>
       </tr>
-    <% end %>
+    
+      <tr>
+        <td>Patty Murray</td>
+        <td>@PattyMurray</td>
+      </tr>
+    
   </table>
 </body>
 </html>
